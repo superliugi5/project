@@ -1,22 +1,11 @@
 @charset "utf-8";
-
+/*M2LO4 Demonstrate external, embedded, and inline styles*/
 @font-face {
- font-family: Champagne;
- src: url(cac_champagne.woff) format('woff'),
- url(cac_champagne.ttf) format('ttf');
+ font-family: Yatra One;
+ src: url(YatraOne-Regular.ttf) format('ttf');
 }
  
-@font-face {
- font-family: Grunge;
- src: url(1942.woff) format('woff'),
- url(1942.ttf) format('ttf');
-}
  
-@font-face {
- font-family: Dobkin;
- src: url(DobkinPlain.woff) format('woff'),
- url(DobkinPlain.ttf) format('ttf');
-}
 
 /* 
 CIS155 V1 Runescape
@@ -26,26 +15,65 @@ Filename: styles.css
 */
 
 /* Structural Styles */
+/*M2LO15 Apply colors using CSS*/
 html{
     background-color:saddlebrown;
    }
+
 header{
-    background-color:royalblue;
-   }
-body{
-    background-color:seagreen
+    background-color:saddlebrown;
    }
 
- /* Navigation Styles */
-nav {
-    display: inline;
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements*/
+body{
+    background-color:seagreen;
+    font-family: Yatra One, cursive;
+    font-size: large;
+    font-weight: bolder;
+    text-align: left;
+    color: rgb(167, 12, 12);
+   }
+
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+p {
+    color: black;
+    text-align: center;
 }
+
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+article {
+    color: black;
+}
+
+ /* Navigation Styles */
+ /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+nav a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Yatra One, cursive;
+    text-align: center;
+  }
+/*  M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector.*/
+nav a:link, nav a:visited {
+    color: rgb(151, 28, 28);
+    text-decoration:saddlebrown;
+  }
+
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)*/
+nav a:hover, nav a:active{
+    color:hsla(0, 10%, 100%, 0.70);
+  }
   
    
 /* Section Styles */
-   
-   
-   
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector*/
+p::first-letter {
+    text-transform: capitalize;
+}
+/*M2LO6  Demonstrate a CSS id and a CSS class selector*/
+#id {
+    text-align: center;
+}
    
 /* Definition List Styles */
    
