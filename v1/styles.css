@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@font-face {
+ font-family: Champagne;
+ src: url(cac_champagne.woff) format('woff'),
+ url(cac_champagne.ttf) format('ttf');
+}
+ 
+@font-face {
+ font-family: Grunge;
+ src: url(1942.woff) format('woff'),
+ url(1942.ttf) format('ttf');
+}
+ 
+@font-face {
+ font-family: Dobkin;
+ src: url(DobkinPlain.woff) format('woff'),
+ url(DobkinPlain.ttf) format('ttf');
+}
+
+/* 
+CIS155 V1 Runescape
+Name: Emilio Tovar
+Date: 04/30/2020
+Filename: styles.css
+*/
+
+/* Structural Styles */
+html{
+    background-color:saddlebrown;
+   }
+header{
+    background-color:royalblue;
+   }
+body{
+    background-color:seagreen
+   }
+
+ /* Navigation Styles */
+nav {
+    display: inline;
+}
+  
+   
+/* Section Styles */
+   
+   
+   
+   
+/* Definition List Styles */
+   

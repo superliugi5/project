@@ -1,36 +1,49 @@
 <!DOCTYPE html>
+<!-- M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)-->
 <html>
     <head>
+        <!-- CIS155 V1- This is the homepage of my Runescape website.
+             Name: Emilio Tovar
+             Date: April 30,2020 -->
        <meta charset="UTF-8">
-       <title>GitHub Fun</title>
+       <title>Runescape101</title>
+       <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+       <style>
+
+       </style>
        <link href="styles.css" rel="stylesheet"/> 
     </head>
     <body>
-        <!-- This is the homepage of my Runescape website.
-             Name: Emilio Tovar
-             Date: April 30,2020
-            M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item should be specified once, describing how the file it is in meets this outcome)    -->
-        <title>Welcome</title>
-        <img src="rsback.jpg" alt=""/>
-        <body>
-            <header>
-                <nav>
-                    <ul>
+        <header>
+            <img src="rsbanner.jpg" />
+
+        </header>
+        <nav>
+            <!--M1LO12 Create navigation using unordered lists (HTML)-->
+            <!--M1LO13 Demonstrate using 3 types of hyperlinks: site navigation-->
+            <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="history.html">History</a></li>
                         <li><a href="skills.html">Skills/Quests</a></li>
                         <li><a href="guide.html">Guide</a></li>
                         <li><a href="pking.html">Pking</a></li>
-                    </ul>
-                </nav>
-            </header>
+                        <li><a href="about.html">About this website</a></li>
+
+            </ul>
+        </nav>
         <article>
-
-
+            <!--M2LO4 Demonstrate external, embedded, and inline styles-->
+            <h1 style="color:rgb(141, 39, 39);" id="top">WELCOME TO RUNESCAPE 101</h1>
+            <!--M1LO9 Demonstrate the use of inline images (HTML)-->
+            <img src="rsload.png"/>
+            <p>Runescape is MMORPG that was popular in the 2000s. It is an adventure style of game where you can do all sorts of things such as
+                fishing, cooking, collecting items, killing monsters, exploring dungeons and even killing other players to take their stuff.
+                There is almost no limit to the amount of activities in the game.</p>
         </article>
         <footer>
-
-            
+            Hope you have fun!
+            <!--M1LO13 Demonstrate using 3 types of hyperlinks: targeted location using ids-->
+            <p>click here to return to the <a href="#top">top</a> of the page</p>
         </footer>
     </body>
 </html>
