@@ -1,11 +1,5 @@
 @charset "utf-8";
-/*M2LO4 Demonstrate external, embedded, and inline styles*/
-@font-face {
- font-family: 'Times New Roman', Times, serif;
- src: format();
-}
- 
- 
+
 
 /* 
 CIS155 V1 Runescape
