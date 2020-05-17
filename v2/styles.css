@@ -1,0 +1,199 @@
+@charset "utf-8";
+/*M2LO4 Demonstrate external, embedded, and inline styles*/
+@font-face {
+ font-family: 'Times New Roman', Times, serif;
+ src: format();
+}
+ 
+ 
+
+/* 
+CIS155 V1 Runescape
+Name: Emilio Tovar
+Date: 05/16/2020
+Filename: styles.css
+*/
+
+/* Structural Styles */
+/*M2LO15 Apply colors using CSS*/
+/*M4LO2 Demonstrate the use of background images (CSS)*/
+html{
+    /*background-color:saddlebrown;*/
+    background: url(rsback.jpg);
+    background-repeat: repeat;
+}
+
+/*M3LO8B Demonstrate relative positioning (keeps everything in place, if i were to move the header)*/
+header{
+    position: relative;
+    text-align: center;
+    background-color: gray;
+    
+}
+
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements*/
+body{
+    background-color:rgba(94, 105, 99, 0.479);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bolder;
+    text-align: left;
+
+
+    
+    color: rgb(140, 166, 223);
+}
+
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+p {
+    color: black;
+    text-align: center;
+}
+
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+article {
+    color: black;
+    text-align: center;
+}
+/*M4LO5 Demonstrate the use of text shadowing (makes the text POP)*/
+h1{
+    text-shadow: rgb(24, 173, 179) 1px 1px 1px;
+}
+
+h2{
+    text-shadow: rgb(24, 173, 179) 1px 1px 1px;
+}
+h3 {
+    text-decoration: underline;
+    color: rgb(24, 173, 179);
+    text-align: left;
+    padding-left: 20px;
+}
+
+ /* Navigation Styles */
+ /*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+nav a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+/*  M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector.*/
+nav a:link, nav a:visited {
+    color: rgb(151, 28, 28);
+    text-decoration:saddlebrown;
+}
+
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)*/
+nav a:hover, nav a:active{
+    color:hsla(0, 10%, 100%, 0.70);
+}
+  
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+  
+li.menu {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: black;
+}
+
+/*M4LO3 Demonstrate the use of rounded corners for borders*/
+li {
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+
+/* Section Styles */
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector*/
+p::first-letter {
+    text-transform: capitalize;
+}
+/*M2LO6  Demonstrate a CSS id and a CSS class selector*/
+#id {
+    text-align: center;
+}
+
+/*M4LO6 Demonstrate the use of opacity/transparency for images*/
+/*M4LO8 Demonstrate the use of transformations for 2D images (rotates image 30 deg to the right, and moves it down)*/
+
+figure{
+    opacity: 0.70;
+    transform: rotate(30deg) translateY(50px);
+}
+
+figure figcaption {
+    background-color: gray;
+    position: relative;
+}
+/*Right column styles*/
+/*M3LO2 Demonstrate floating elements (floats image to the right)*/
+/*M3LO8A Demonstrate absolute positioning (moves the image to the location set.)*/
+.classic {
+    position: absolute;
+    bottom: 40px;
+    display: block;
+    float: right;
+    padding-left: 10px;
+}
+
+
+/*Left column styles*/
+/*M3LO3 Demonstrate a clearing floats (displays img once left margin is clear)*/
+.rs2 {
+    clear: left;
+    float: right;
+    padding-right: 10px;
+}
+
+
+
+
+/* Grid column styles */
+div {
+    outline: 1px solid black;
+}
+/*M4LO4 Demonstrate the use of gradients*/
+div[class^="col-"] {
+    float: left;
+    background: linear-gradient(rgba(128, 128, 128, 0.342), rgba(0, 128, 128, 0.295),gray);
+}
+
+/*M3LO6 Demonstrate formatting a grid (sets the way it'll fit into the page)*/
+/*M3LO10 Demonstrate an overflow setting (added the scroll due to height of div col)*/
+div.col-1-2 { width: 50%;}
+div.col-1-3 { width: 33.3%;
+              height: 620px;
+              overflow: auto;}
+div.col-2-3 { width: 66.7%;}
+
+
+
+
+/*footer styles*/
+/*M3LO9 Demonstrate fixed, static, or inherited positioning (fixed footer no matter if i scroll)*/
+footer {
+    position: fixed;
+    bottom: 10px;
+    background-color: gray;
+}
+   
