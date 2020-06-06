@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+/* 
+CIS155 V1 Runescape
+Name: Emilio Tovar
+Date: 05/16/2020
+Filename: reset.css
+*/
+
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules)*/
+/* Structural Styles */
+article, aside, figcaption, figure, footer, header, main, nav, section{
+    display: block;
+}
+
+/*Typographic Styles*/
+
+address, article, aside, blockquote, body, cite, div, dl, dt, dd, em, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, main, nav, ol, p, section, span, ul {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+nav ul{
+    list-style-type: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
