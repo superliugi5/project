@@ -147,7 +147,6 @@ figure figcaption {
 }
 /*M8LO12 Demonstrate how to format media with CSS*/
 audio {
-    box-shadow: cadetblue;
     opacity: .70;
     display: block;
     margin: 10px auto;
